@@ -20,6 +20,10 @@
   },
   "homepage": "https://github.com/nomilous/scintilla#readme",
   "dependencies": {
-    "commander": "^2.9.0"
+    "bluebird": "^3.3.5",
+    "commander": "^2.9.0",
+    "keythereum": "^0.2.6",
+    "mkdirp": "^0.5.1",
+    "rimraf": "^2.5.2"
   }
 }
