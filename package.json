@@ -1,0 +1,25 @@
+{
+  "name": "scintilla",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "scintilla": "./bin/scintilla"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nomilous/scintilla.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nomilous/scintilla/issues"
+  },
+  "homepage": "https://github.com/nomilous/scintilla#readme",
+  "dependencies": {
+    "commander": "^2.9.0"
+  }
+}
