@@ -19,9 +19,9 @@ Made for OSX, your paths may differ
 ### 1. Easily create and reset private chain miner.
 
 ```bash
-scintilla --reset
+scintilla --reset [--datadir <alternative>]
 ```
-* Destroys the network in `$HOME/.scintilla/*`
+* Destroys the network in `$HOME/.scintilla/*` or `<alternative>`
 * Recreates it, prompting for etherbase account passphrase
 * Generates `genesis.json` file.
 
