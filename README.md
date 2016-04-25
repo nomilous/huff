@@ -37,7 +37,7 @@ huff --mine
 ```bash
 huff --create-account
 ```
-* Creates a new account in the datadir/keystore
+* Creates a new account in the `datadir/keystore`
 * Prompts for a **passphrase** for the new account
 * Same as `geth  --datadir ~/.huff/ account new`
 * BUT: Adding accounts using geth will put the account sequences out of order
@@ -45,8 +45,8 @@ huff --create-account
 ```bash
 huff --list-accounts
 ```
-* List all accounts in datadir/keystore
-* Listing includes balance on wei
+* List all accounts in `datadir/keystore`
+* Listing includes balance in wei
 
 ```bash
 huff --show-key <account>
@@ -79,7 +79,7 @@ huff --transfer 10 --sender 9372fbb45a307c70f874f48a0668b512ed1ae64d --to 02a82e
 ```bash
 huff --transfer 10000000 --wei --sender 1 --to 0
 ```
-* Transfer unit as `wei` instead of `ether` 
+* Transfer unit as wei instead of ether 
 
 ### Deploying contracts
 
