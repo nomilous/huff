@@ -67,7 +67,7 @@ huff --balance 9372fbb45a307c70f874f48a0668b512ed1ae64d
 ```bash
 huff --transfer 20 --to 2
 ```
-* Transfers 20 ether to from `account[0]` to `account[2]`
+* Transfers 20 ether from `account[0]` to `account[2]`
 * Prompts for **passphrase** for `account[0]`
 * Displays transaction receipt
 
