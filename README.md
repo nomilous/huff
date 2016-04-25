@@ -1,6 +1,6 @@
 # huff
 
-Commandline utility for ethereum. Perform common functions easily, including:
+Commandline utility for ethereum. For convenience.
 
 1. [Create, Mine and Reset private network miner.](https://github.com/nomilous/huff#create-mine-and-reset-private-network-miner)
 2. [Keystore / Account tools.](https://github.com/nomilous/huff#keystore--account-tools)
