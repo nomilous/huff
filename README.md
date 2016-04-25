@@ -2,12 +2,11 @@
 
 Commandline utility for ethereum. Perform common functions easily, including:
 
-1. Create, run and reset private network miner.
-2. Keystore / Account tools.
-3. Transferring ether between accounts.
-4. Deploying contracts.
-5. Calling and transacting with contracts.
-6. Maintaining contract address/abi archive.
+1. [Create, run and reset private network miner.](https://github.com/nomilous/huff#create-run-and-reset-private-network-miner)
+2. [Keystore / Account tools.](https://github.com/nomilous/huff#keystore--account-tools)
+3. [Transferring ether between accounts.](https://github.com/nomilous/huff#transferring-ether-between-accounts)
+4. [Deploying contracts.](https://github.com/nomilous/huff#deploying-contracts)
+5. [Calling and transacting with contracts.]()
 
 ```bash
 npm install -g huff
@@ -84,4 +83,5 @@ huff --transfer 10000000 --wei --sender 1 --to 0
 
 ### Deploying contracts
 
-...
+
+### Calling and transacting with contracts
