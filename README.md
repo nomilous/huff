@@ -6,7 +6,7 @@ Commandline utility for ethereum. Perform common functions easily, including:
 2. [Keystore / Account tools.](https://github.com/nomilous/huff#keystore--account-tools)
 3. [Transferring ether between accounts.](https://github.com/nomilous/huff#transferring-ether-between-accounts)
 4. [Deploying contracts.](https://github.com/nomilous/huff#deploying-contracts)
-5. [Calling and transacting with contracts.]()
+5. [Calling and transacting with contracts.](https://github.com/nomilous/huff#calling-and-transacting-with-contracts)
 
 ```bash
 npm install -g huff
