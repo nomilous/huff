@@ -1,24 +1,24 @@
 {
-  "name": "scintilla",
+  "name": "huff",
   "version": "0.0.1",
-  "description": "",
+  "description": "Commandline utility for ethereum.",
   "main": "index.js",
   "bin": {
-    "scintilla": "./bin/scintilla"
+    "huff": "./bin/huff"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nomilous/scintilla.git"
+    "url": "git+https://github.com/nomilous/huff.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nomilous/scintilla/issues"
+    "url": "https://github.com/nomilous/huff/issues"
   },
-  "homepage": "https://github.com/nomilous/scintilla#readme",
+  "homepage": "https://github.com/nomilous/huff#readme",
   "dependencies": {
     "bluebird": "^3.3.5",
     "commander": "^2.9.0",
