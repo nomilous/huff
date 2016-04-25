@@ -19,10 +19,11 @@ Made for osx/linux, your paths may differ
 ### Create, run and reset private network miner.
 
 ```bash
+huff --reset
 huff --reset [--datadir <alternative>]
 ```
 * Destroys the network in `$HOME/.huff/*` or `<alternative>`
-* Recreates it, prompting for etherbase account **passphrase**
+* Recreates it, prompting for new etherbase account **passphrase**
 * Generates `genesis.json` file.
 
 ```bash
