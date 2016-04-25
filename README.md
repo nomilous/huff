@@ -10,7 +10,7 @@ Commandline utility for ethereum. Perform common functions easily, including:
 6. Transferring ether and viewing balances.
 
 ```bash
-npm install -g scintilla
+npm install -g huff
 huff -h
 ```
 
