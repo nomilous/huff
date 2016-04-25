@@ -22,7 +22,7 @@ Made for osx/linux, your paths may differ
 huff --reset [--datadir <alternative>]
 ```
 * Destroys the network in `$HOME/.huff/*` or `<alternative>`
-* Recreates it, prompting for etherbase account passphrase
+* Recreates it, prompting for etherbase account **passphrase**
 * Generates `genesis.json` file.
 
 ```bash
@@ -38,7 +38,7 @@ huff --mine
 huff --create-account
 ```
 * Creates a new account in the datadir/keystore
-* Prompts for a passphrase for the new account
+* Prompts for a **passphrase** for the new account
 * Same as `geth  --datadir ~/.huff/ account new`
 * BUT: Adding accounts using geth will put the account sequences out of order
 
@@ -66,15 +66,15 @@ huff --balance 9372fbb45a307c70f874f48a0668b512ed1ae64d
 ```bash
 huff --transfer 20 --to 2
 ```
-* Transfers 20 ether to from account[0] to account[2]
-* Prompts for passphrase for account[0]
+* Transfers 20 ether to from `account[0]` to `account[2]`
+* Prompts for **passphrase** for `account[0]`
 * Displays transaction receipt
 
 ```bash
 huff --transfer 10 --sender 9372fbb45a307c70f874f48a0668b512ed1ae64d --to 02a82e3e3fb4e2afb01971556373fa0e03898c79
 ```
 * Transfers 10 ether from sender address
-* Prompts for passphrase of `9372fbb45a307c70f874f48a0668b512ed1ae64d` account
+* Prompts for **passphrase** of `9372fbb45a307c70f874f48a0668b512ed1ae64d` account
 
 ```bash
 huff --transfer 10000000 --wei --sender 1 --to 0
