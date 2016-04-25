@@ -3,8 +3,8 @@
 Commandline utility for ethereum. Perform common functions easily, including:
 
 1. Create, run and reset private network miner.
-2. Keystore tools.
-3. Transferring ether and viewing balances.
+2. Keystore / Account tools.
+3. Transferring ether between accounts.
 4. Deploying contracts.
 5. Calling and transacting with contracts.
 6. Maintaining contract address/abi archive.
@@ -33,7 +33,7 @@ huff --mine
 * Creates `$HOME/.huff/geth.ipc` for attach
 
 
-### Keystore tools.
+### Keystore / Account tools.
 
 ```bash
 huff --create-account
@@ -47,6 +47,7 @@ huff --create-account
 huff --list-accounts
 ```
 * List all accounts in datadir/keystore
+* Listing includes balance on wei
 
 ```bash
 huff --show-key <account>
@@ -55,6 +56,32 @@ huff --show-key c10d9bbb5c9481860997e8dc5c6ada6e0ccd6f61
 ```
 * Show account's privateKey
 
+```
+huff --balance 0
+huff --balance 9372fbb45a307c70f874f48a0668b512ed1ae64d
+```
+* Show accounts balance in wei
 
-### Transferring ether and viewing balances.
+### Transferring ether between accounts.
 
+```bash
+huff --transfer 20 --to 2
+```
+* Transfers 20 ether to from account[0] to account[2]
+* Prompts for passphrase for account[0]
+* Displays transaction receipt
+
+```bash
+huff --transfer 10 --sender 9372fbb45a307c70f874f48a0668b512ed1ae64d --to 02a82e3e3fb4e2afb01971556373fa0e03898c79
+```
+* Transfers 10 ether from sender address
+* Prompts for passphrase of `9372fbb45a307c70f874f48a0668b512ed1ae64d` account
+
+```bash
+huff --transfer 10000000 --wei --sender 1 --to 0
+```
+* Transfer unit as `wei` instead of `ether` 
+
+### Deploying contracts
+
+...
