@@ -26,6 +26,8 @@ huff --reset [--datadir <alternative>]
 * Recreates it, prompting for new etherbase account **passphrase**
 * Generates `genesis.json` file.
 
+***
+
 ```bash
 huff --mine
 ```
@@ -89,7 +91,7 @@ huff --deploy example/greeter.sol -p 'hello world!' [--gas 1000000]
 ```
 * Deploys contract from source in `example/greeter.sol`
 * Constructor param as 'hello world'
-* Write deployment utility files to `example/greeter.sol.deployed/latest/*` 
+* Writes deployment utility files to `example/greeter.sol.deployed/latest/*` 
 
 ```bash
 huff --sender 2 --deploy example/imagine.sol -p 'all the' -p people
