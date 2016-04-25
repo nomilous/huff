@@ -106,6 +106,8 @@ huff --transfer 10000000 --wei --sender 1 --to 0
 
 ### Deploying contracts
 
+***
+
 ```bash
 huff --deploy example/greeter.sol -p 'hello world!' [--gas 1000000]
 ```
