@@ -2,7 +2,7 @@
 
 Commandline utility for ethereum. Perform common functions easily, including:
 
-1. [Create, run and reset private network miner.](https://github.com/nomilous/huff#create-run-and-reset-private-network-miner)
+1. [Create, Mine and Reset private network miner.](https://github.com/nomilous/huff#create-mine-and-reset-private-network-miner)
 2. [Keystore / Account tools.](https://github.com/nomilous/huff#keystore--account-tools)
 3. [Transferring ether between accounts.](https://github.com/nomilous/huff#transferring-ether-between-accounts)
 4. [Deploying contracts.](https://github.com/nomilous/huff#deploying-contracts)
@@ -15,7 +15,7 @@ huff -h
 
 Made for osx/linux, your paths may differ
 
-### Create, run and reset private network miner.
+### Create, Mine and Reset private network miner.
 
 ***
 
