@@ -90,7 +90,9 @@ huff --transfer 20 --to 2
 ***
 
 ```bash
-huff --transfer 10 --sender 9372fbb45a307c70f874f48a0668b512ed1ae64d --to 02a82e3e3fb4e2afb01971556373fa0e03898c79
+huff --transfer 10 \
+     --sender 9372fbb45a307c70f874f48a0668b512ed1ae64d \
+     --to 02a82e3e3fb4e2afb01971556373fa0e03898c79
 ```
 * Transfers 10 ether from sender address
 * Prompts for **passphrase** of `9372fbb45a307c70f874f48a0668b512ed1ae64d` account
