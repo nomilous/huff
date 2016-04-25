@@ -15,8 +15,9 @@ huff -h
 
 Made for osx/linux, your paths may differ
 
-
 ### Create, run and reset private network miner.
+
+***
 
 ```bash
 huff --reset
@@ -37,6 +38,8 @@ huff --mine
 ***
 
 ### Keystore / Account tools.
+
+***
 
 ```bash
 huff --create-account
@@ -74,6 +77,8 @@ huff --balance 9372fbb45a307c70f874f48a0668b512ed1ae64d
 ***
 
 ### Transferring ether between accounts.
+
+***
 
 ```bash
 huff --transfer 20 --to 2
