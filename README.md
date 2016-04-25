@@ -34,6 +34,7 @@ huff --mine
 * Start mining the new network
 * Creates `$HOME/.huff/geth.ipc` for attach
 
+***
 
 ### Keystore / Account tools.
 
@@ -45,11 +46,15 @@ huff --create-account
 * Same as `geth  --datadir ~/.huff/ account new`
 * BUT: Adding accounts using geth will put the account sequences out of order
 
+***
+
 ```bash
 huff --list-accounts
 ```
 * List all accounts in `datadir/keystore`
 * Listing includes balance in wei
+
+***
 
 ```bash
 huff --show-key <account>
@@ -58,11 +63,15 @@ huff --show-key c10d9bbb5c9481860997e8dc5c6ada6e0ccd6f61
 ```
 * Show account's privateKey
 
+***
+
 ```
 huff --balance 0
 huff --balance 9372fbb45a307c70f874f48a0668b512ed1ae64d
 ```
 * Show accounts balance in wei
+
+***
 
 ### Transferring ether between accounts.
 
@@ -73,16 +82,22 @@ huff --transfer 20 --to 2
 * Prompts for **passphrase** for `account[0]`
 * Displays transaction receipt
 
+***
+
 ```bash
 huff --transfer 10 --sender 9372fbb45a307c70f874f48a0668b512ed1ae64d --to 02a82e3e3fb4e2afb01971556373fa0e03898c79
 ```
 * Transfers 10 ether from sender address
 * Prompts for **passphrase** of `9372fbb45a307c70f874f48a0668b512ed1ae64d` account
 
+***
+
 ```bash
 huff --transfer 10000000 --wei --sender 1 --to 0
 ```
-* Transfer unit as wei instead of ether 
+* Transfer unit as wei instead of ether
+
+***
 
 ### Deploying contracts
 
@@ -93,11 +108,14 @@ huff --deploy example/greeter.sol -p 'hello world!' [--gas 1000000]
 * Constructor param as 'hello world'
 * Writes deployment utility files to `example/greeter.sol.deployed/latest/*` 
 
+***
+
 ```bash
 huff --sender 2 --deploy example/imagine.sol -p 'all the' -p people
 ```
 * Supports more than one constructor parameter
 
+***
 
 ### Calling and transacting with contracts
 
