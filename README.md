@@ -83,5 +83,18 @@ huff --transfer 10000000 --wei --sender 1 --to 0
 
 ### Deploying contracts
 
+```bash
+huff --deploy example/greeter.sol -p 'hello world!' [--gas 1000000]
+```
+* Deploys contract from source in `example/greeter.sol`
+* Constructor param as 'hello world'
+* Write deployment utility files to `example/greeter.sol.deployed/latest/*` 
+
+```bash
+huff --sender 2 --deploy example/imagine.sol -p 'all the' -p people
+```
+* Supports more than one constructor parameter
+
 
 ### Calling and transacting with contracts
+
