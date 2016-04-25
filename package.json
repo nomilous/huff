@@ -24,6 +24,7 @@
     "commander": "^2.9.0",
     "keythereum": "^0.2.6",
     "mkdirp": "^0.5.1",
+    "read": "^1.0.7",
     "rimraf": "^2.5.2"
   }
 }
