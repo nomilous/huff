@@ -20,12 +20,11 @@ contract greeter is mortal {
     }
 
     /* update greeting */
-    event Updated (string oldGreeting, string newGreeting);
+    event Updated (string newGreeting);
 
     function update(string value) returns (bool success) {
-        var oldGreeting = greeting;
         greeting = value;
-        Updated(oldGreeting, value);
+        Updated(greeting);
         return true;
     }
 }
