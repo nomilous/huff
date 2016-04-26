@@ -172,3 +172,7 @@ huff --connect example/greeter.sol --send update -p 'hello world'
 * The second calls `update('hello world')` which emits an event
 
 ***
+
+## TODO
+
+* pop archive on kill()
