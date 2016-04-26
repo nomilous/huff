@@ -134,7 +134,7 @@ huff --sender 2 --deploy example/imagine.sol -p 'all the' -p people
 huff --connect example/greeter.sol --send greet
 ```
 * Runs the `greet()` method on the previously compiled contract
-* Uses the utility files (as deployed) from `example/greeter.sol.deployed/latest/*` to determine contract ABI and Address
+* Uses the utility files (as deployed) from `example/greeter.sol.deployed/latest/*` for ABI and Address
 * Displays the result to console
 
 ***
