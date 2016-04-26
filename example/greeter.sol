@@ -13,4 +13,9 @@ contract greeter is mortal {
     function greet() constant returns (string) {
         return greeting;
     }
+
+    /* constant reply */
+    function echo(string value1, string value2) constant returns (string, string, int16) {
+        return (value1, value2, 2);
+    } 
 }

@@ -128,5 +128,20 @@ huff --sender 2 --deploy example/imagine.sol -p 'all the' -p people
 
 ### Calling and transacting with contracts
 
-TODO
+***
 
+```bash
+huff --connect example/greeter.sol --send greet
+```
+* Runs the `greet()` method on the previously compiled contract
+* Uses the utility files (as deployed) from `example/greeter.sol.deployed/latest/*` to determine contract ABI and Address
+* Displays the result to console
+
+***
+
+```bash
+huff --connect example/greeter.sol --send echo --p 'arg1' -p 'arg2'
+```
+* Runs echo with two arguments
+
+***
