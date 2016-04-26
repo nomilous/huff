@@ -7,6 +7,7 @@ Commandline utility for ethereum. For convenience.
 3. [Transferring ether between accounts.](https://github.com/nomilous/huff#transferring-ether-between-accounts)
 4. [Deploying contracts.](https://github.com/nomilous/huff#deploying-contracts)
 5. [Calling and transacting with contracts.](https://github.com/nomilous/huff#calling-and-transacting-with-contracts)
+6. [Watching contracts](https://github.com/nomilous/huff#watching-contracts)
 
 ```bash
 npm install -g huff
@@ -157,3 +158,17 @@ huff --connect token.sol --send balanceOf -p 0x9372fbb45a307c70f874f48a0668b512e
 ```
 
 * **Preceed addresss with '0x' when passing as parameters**
+
+### Watching contracts
+
+***
+
+```bash
+huff --watch example/greeter.sol
+# second console
+huff --connect example/greeter.sol --send update -p 'hello world'
+```
+* The first starts watching the contract for events.
+* The second calls `update('hello world')` which emits an event
+
+***
