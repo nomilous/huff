@@ -10,7 +10,7 @@ contract greeter is mortal {
     }
 
     /* main function */
-    function greet() constant returns (string) {
+    function greet() constant returns (string greeting) {
         return greeting;
     }
 
@@ -21,13 +21,11 @@ contract greeter is mortal {
 
     /* update greeting */
     event Updated (string oldGreeting, string newGreeting);
-    event Updated2 (string oldGreeting, string newGreeting);
 
     function update(string value) returns (bool success) {
         var oldGreeting = greeting;
         greeting = value;
-        Updated(greeting, value);
-        Updated2(greeting, value);
+        Updated(oldGreeting, value);
         return true;
     }
 }
