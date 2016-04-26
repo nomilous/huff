@@ -17,5 +17,17 @@ contract greeter is mortal {
     /* constant reply */
     function echo(string value1, string value2) constant returns (string, string, int16) {
         return (value1, value2, 2);
-    } 
+    }
+
+    /* update greeting */
+    event Updated (string oldGreeting, string newGreeting);
+    event Updated2 (string oldGreeting, string newGreeting);
+
+    function update(string value) returns (bool success) {
+        var oldGreeting = greeting;
+        greeting = value;
+        Updated(greeting, value);
+        Updated2(greeting, value);
+        return true;
+    }
 }
