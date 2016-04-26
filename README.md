@@ -145,3 +145,8 @@ huff --connect example/greeter.sol --send echo --p 'arg1' -p 'arg2'
 * Runs `echo()` with two arguments
 
 ***
+
+```bash
+huff --connect example/greeter.sol --send kill
+```
+* Sends transaction to the `kill()` method
