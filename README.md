@@ -142,6 +142,6 @@ huff --connect example/greeter.sol --send greet
 ```bash
 huff --connect example/greeter.sol --send echo --p 'arg1' -p 'arg2'
 ```
-* Runs echo with two arguments
+* Runs `echo()` with two arguments
 
 ***
