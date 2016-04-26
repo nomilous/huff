@@ -150,3 +150,10 @@ huff --connect example/greeter.sol --send echo --p 'arg1' -p 'arg2'
 huff --connect example/greeter.sol --send kill
 ```
 * Sends transaction to the `kill()` method
+
+***
+```bash
+huff --connect token.sol --send balanceOf -p 0x9372fbb45a307c70f874f48a0668b512ed1ae64d
+```
+
+* **Preceed addresss with '0x' when passing as parameters**
