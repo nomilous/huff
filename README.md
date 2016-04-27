@@ -16,9 +16,9 @@ huff -h
 
 Made for osx/linux, your paths may differ
 
-### Create, Mine and Reset private network.
 
-***
+
+### Create, Mine and Reset private network.
 
 ```bash
 huff --reset
@@ -36,11 +36,10 @@ huff --mine
 * Start mining the new network
 * Creates `$HOME/.huff/geth.ipc` for attach
 
-***
+
+
 
 ### Keystore / Account tools.
-
-***
 
 ```bash
 huff --create-account
@@ -75,11 +74,10 @@ huff --balance 9372fbb45a307c70f874f48a0668b512ed1ae64d
 ```
 * Show accounts balance in wei
 
-***
+
+
 
 ### Transferring ether between accounts.
-
-***
 
 ```bash
 huff --transfer 20 --to 2
@@ -105,11 +103,9 @@ huff --transfer 10000000 --wei --sender 1 --to 0
 ```
 * Transfer unit as wei instead of ether
 
-***
+
 
 ### Deploying contracts
-
-***
 
 ```bash
 huff --deploy example/greeter.sol -p 'hello world!' [--gas 1000000]
@@ -137,9 +133,8 @@ huff --deploy example/greeter.sol -p 'hello asia!' --tag asia
 * The tag is used to distinguish between them in `--connect` and `--send` (see below)
 
 
-### Calling and transacting with contracts
 
-***
+### Calling and transacting with contracts
 
 ```bash
 huff --connect example/greeter.sol --tag africa --send greet
@@ -163,15 +158,16 @@ huff --connect example/greeter.sol --send kill
 * Sends transaction to the `kill()` method
 
 ***
+
 ```bash
 huff --connect token.sol --send balanceOf -p 0x9372fbb45a307c70f874f48a0668b512ed1ae64d
 ```
-
 * **Precede address with '0x' when passing as parameters**
+
+
 
 ### Watching contracts
 
-***
 
 ```bash
 huff --watch example/greeter.sol
@@ -180,8 +176,6 @@ huff --connect example/greeter.sol --send update -p 'hello world'
 ```
 * The first starts watching the contract for events.
 * The second calls `update('hello world')` which emits an event
-
-***
 
 ## TODO
 
