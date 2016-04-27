@@ -8,7 +8,7 @@ Commandline utility for ethereum. For convenience.
 4. [Deploying contracts.](https://github.com/nomilous/huff#deploying-contracts)
 5. [Calling and transacting with contracts.](https://github.com/nomilous/huff#calling-and-transacting-with-contracts)
 6. [Watching contracts](https://github.com/nomilous/huff#watching-contracts)
-
+7. [Scripting](https://github.com/nomilous/huff#scripting)
 ```bash
 npm install -g huff
 huff -h
@@ -176,6 +176,12 @@ huff --connect example/greeter.sol --send update -p 'hello world'
 ```
 * The first starts watching the contract for events.
 * The second calls `update('hello world')` which emits an event
+
+
+### Scripting
+
+...
+
 
 ## TODO
 
