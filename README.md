@@ -130,7 +130,7 @@ huff --sender 2 --deploy example/imagine.sol -p 'all the' -p people
 
 ```bash
 huff --deploy example/greeter.sol -p 'hello africa!' --tag africa
-huff --deploy example/asia.sol -p 'hello asia!' --tag asia
+huff --deploy example/greeter.sol -p 'hello asia!' --tag asia
 ```
 * Use optional `--tag` to deploy multiple instances of the same contract.
 * Separate state files are created in `example/greeter.sol.deployed/*`
