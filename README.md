@@ -157,7 +157,7 @@ huff --connect example/greeter.sol --send kill
 huff --connect token.sol --send balanceOf -p 0x9372fbb45a307c70f874f48a0668b512ed1ae64d
 ```
 
-* **Preceed addresss with '0x' when passing as parameters**
+* **Precede address with '0x' when passing as parameters**
 
 ### Watching contracts
 
