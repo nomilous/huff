@@ -116,7 +116,8 @@ huff --deploy example/greeter.sol -p 'hello world!' [--gas 1000000]
 ```
 * Deploys contract from source in `example/greeter.sol`
 * Constructor param as 'hello world'
-* Writes deployment utility files to `example/greeter.sol.deployed/latest/*` 
+* Writes deployment state files into `example/greeter.sol.deployed/*`
+* **You may want to `.gitignore *.deployed`**
 
 ***
 
@@ -127,12 +128,21 @@ huff --sender 2 --deploy example/imagine.sol -p 'all the' -p people
 
 ***
 
+```bash
+huff --deploy example/greeter.sol -p 'hello africa!' --tag africa
+huff --deploy example/asia.sol -p 'hello asia!' --tag asia
+```
+* Use optional `--tag` to deploy multiple instances of the same contract.
+* Separate state files are created in `example/greeter.sol.deployed/*`
+* The tag is used to distinguish between them in `--connect` and `--send` (see below)
+
+
 ### Calling and transacting with contracts
 
 ***
 
 ```bash
-huff --connect example/greeter.sol --send greet
+huff --connect example/greeter.sol --tag africa --send greet
 ```
 * Runs the `greet()` method on the previously compiled contract
 * Uses the utility files (as deployed) from `example/greeter.sol.deployed/latest/*` for ABI and Address
