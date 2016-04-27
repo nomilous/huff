@@ -10,7 +10,8 @@ contract greeter is mortal {
     }
 
     /* main function */
-    function greet() constant returns (string greeting) {
+    // function greet() constant returns (string greeting) { // bug: greeting comes up empty
+    function greet() constant returns (string theGreeting) {
         return greeting;
     }
 
