@@ -1,6 +1,6 @@
 {
   "name": "huff",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "Commandline utility for ethereum.",
   "main": "index.js",
   "bin": {
