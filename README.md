@@ -171,7 +171,14 @@ huff --connect token.sol --send balanceOf -p 0x9372fbb45a307c70f874f48a0668b512e
 ```
 * **Precede address with '0x' when passing as parameters**
 
+***
 
+```bash
+huff --compile contract.sol
+huff --connect contract.sol --address 0x8ca785e0bea58aa09e88bc3411e648f5aff636bc --send method
+```
+* Uses the compile (without deploy) option to generate the necessary abi utility file
+* Then connects to an existing instance of that contact at the specified address
 
 ### Watching contracts
 
