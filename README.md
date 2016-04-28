@@ -194,7 +194,24 @@ huff --connect example/greeter.sol --send update -p 'hello world'
 
 ### Scripting
 
-...
+eg.
+
+```bash
+# deploy the parent contract
+huff --pass z --deploy example/parent.sol
+
+# spawn a child through it and use --json pointer to only
+# print that part of the transaction reciept containing 
+# the new child's address
+CHILD_ADDRESS=`huff --pass z --connect example/parent.sol --send spawnChild -p 'Child Name' --json /logs/0/args/child`
+
+# compile but don't deploy the child
+# (for abi written into example/child.sol.deployed/..
+huff --compile example/child.sol
+
+# get childs name
+huff --connect example/child.sol --address $CHILD_ADDRESS --send name
+```
 
 
 ## TODO
