@@ -132,7 +132,14 @@ huff --deploy example/greeter.sol -p 'hello asia!' --tag asia
 * Separate state files are created in `example/greeter.sol.deployed/*`
 * The tag is used to distinguish between them in `--connect` and `--send` (see below)
 
+***
 
+```bash
+huff --compile example/greeter.sol
+```
+
+* A variation on `--deploy` that only performs the compile step
+* Stores subset of state files in `example/greeter.sol.deployed/(abi,code)`
 
 ### Calling and transacting with contracts
 
